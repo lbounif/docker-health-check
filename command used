@@ -5,6 +5,10 @@ docker run --name tester -d -p 8080:8080 -p 8081:8081 lynda_tester
 
 docker inspect --format "{{json .State.Health }}" tester
 
+docker inspect 3379c6560159 | jq '.[0].State.Health.Status'
+
+watch 'docker ps --format="table {{.Names}}\t{{.Status}}"'
+
 docker container prune
 
 docker image prune
