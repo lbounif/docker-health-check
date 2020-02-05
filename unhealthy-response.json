@@ -1,0 +1,26 @@
+{"Status":"unhealthy",
+    "FailingStreak":3,
+    "Log":
+    [
+        {
+            "Start":"2020-02-05T11:08:05.284382337Z",
+            "End":"2020-02-05T11:08:05.829606985Z",
+            "ExitCode":0,"Output":"OK\n"},
+            {
+                "Start":"2020-02-05T11:08:10.837261014Z",
+                "End":"2020-02-05T11:08:11.300975615Z",
+                "ExitCode":0,"Output":"OK\n"},
+                {
+                    "Start":"2020-02-05T11:08:16.308053305Z",
+                    "End":"2020-02-05T11:08:16.791964923Z",
+                    "ExitCode":1,
+                    "Output":"curl: (7) Failed to connect to 127.0.0.1 port 8080: Connection refused\n"},
+                    {
+                        "Start":"2020-02-05T11:08:21.799607631Z","End":"2020-02-05T11:08:22.217121852Z",
+                        "ExitCode":1,"Output":"curl: (7) Failed to connect to 127.0.0.1 port 8080: Connection refused\n"},
+                        {
+                            "Start":"2020-02-05T11:08:27.22368553Z","End":"2020-02-05T11:08:27.637716027Z","ExitCode":1,
+                            "Output":"curl: (7) Failed to connect to 127.0.0.1 port 8080: Connection refused\n"
+                        }
+    ]
+}
