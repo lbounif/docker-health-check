@@ -1,7 +1,7 @@
 
 docker build -t lynda_tester .
 
-docker run --name tester -d -p 8080:8080 8081:8081 lynda_tester 
+docker run --name tester -d -p 8080:8080 -p 8081:8081 lynda_tester 
 
 docker inspect --format "{{json .State.Health }}" tester
 
